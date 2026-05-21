@@ -1,11 +1,182 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>Hello world Duvindu fenjrfkeraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoftStay Hotel Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#home">LoftStay</a>
+            <nav class="site-nav">
+                <a href="#rooms">Rooms</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#booking">Book</a>
+            </nav>
+            <a class="button button-primary" href="#booking">Reserve Now</a>
+        </header>
+
+        <main>
+            <section class="hero" id="home">
+                <div class="hero-copy">
+                    <p class="eyebrow">Premium hotel booking</p>
+                    <h1>Stay calm, travel easy.</h1>
+                    <p>Reserve your next retreat in a refined minimalist hotel designed for modern comfort, smart service, and memorable moments.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#booking">Start Booking</a>
+                        <a class="button button-secondary" href="#rooms">Explore Rooms</a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="hero-card-tag">Featured stay</div>
+                    <h2>Urban Sky Suite</h2>
+                    <p class="hero-card-text">Sunlit room with panoramic city view, king bed, wellness amenities and fast check-in.</p>
+                    <div class="hero-card-meta">
+                        <span>From $149 / night</span>
+                        <span>Free breakfast</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <article>
+                    <h3>Hotel booking with clarity</h3>
+                    <p>Browse premium suites, check availability instantly, and lock in your stay with flexible cancellation.</p>
+                </article>
+                <article>
+                    <strong>4.8/5</strong>
+                    <p>Guest satisfaction</p>
+                </article>
+                <article>
+                    <strong>24/7</strong>
+                    <p>Concierge support</p>
+                </article>
+                <article>
+                    <strong>Fast</strong>
+                    <p>Secure booking process</p>
+                </article>
+            </section>
+
+            <section class="section-intro" id="rooms">
+                <h2>Rooms designed for calm stays</h2>
+                <p>Choose a room that matches your travel needs. Every suite blends modern minimalism with thoughtful comfort.</p>
+            </section>
+
+            <section class="cards-grid">
+                <article class="card">
+                    <div class="card-image room1"></div>
+                    <div class="card-content">
+                        <span class="card-tag">Classic</span>
+                        <h3>City View Room</h3>
+                        <p>Cozy and bright room with essential comforts, workspace, and sweeping city views.</p>
+                        <div class="card-footer">
+                            <span>From $99</span>
+                            <a href="#booking">Book</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image room2"></div>
+                    <div class="card-content">
+                        <span class="card-tag">Signature</span>
+                        <h3>Sky Suite</h3>
+                        <p>Spacious suite with lounge area, floor-to-ceiling windows, and luxurious bathroom amenities.</p>
+                        <div class="card-footer">
+                            <span>From $179</span>
+                            <a href="#booking">Book</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image room3"></div>
+                    <div class="card-content">
+                        <span class="card-tag">Premium</span>
+                        <h3>Executive Loft</h3>
+                        <p>Open-plan loft with premium bedding, workspace, and exclusive lounge privileges.</p>
+                        <div class="card-footer">
+                            <span>From $219</span>
+                            <a href="#booking">Book</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="grid-block" id="amenities">
+                <div>
+                    <p class="eyebrow">What we offer</p>
+                    <h2>Wellness, convenience, and quiet luxury.</h2>
+                    <p>From a curated breakfast menu to seamless check-in and a serene lounge, every detail is designed for a relaxed stay.</p>
+                    <ul class="amenities-list">
+                        <li>Fast Wi-Fi with smart room controls</li>
+                        <li>24/7 support and express arrival</li>
+                        <li>Breakfast, gym access, and spa bookings</li>
+                        <li>Flexible cancellation and loyalty perks</li>
+                    </ul>
+                </div>
+                <div class="feature-panel">
+                    <div class="feature-item">
+                        <strong>Minimal design</strong>
+                        <p>Clean interiors, natural light, and quiet spaces for rest or work.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>Smart booking</strong>
+                        <p>Fast reservation flow with instant availability updates.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>Guest-first service</strong>
+                        <p>Attentive concierge, custom requests, and polished hospitality.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="booking-section" id="booking">
+                <div class="booking-copy">
+                    <p class="eyebrow">Book your stay</p>
+                    <h2>Reserve a room in minutes.</h2>
+                    <p>Tell us your dates and preferences. We’ll confirm availability and prepare a calming stay for you.</p>
+                </div>
+                <form class="booking-form" id="bookingForm">
+                    <label>
+                        Full name
+                        <input type="text" name="name" placeholder="Jane Doe" required>
+                    </label>
+                    <label>
+                        Email address
+                        <input type="email" name="email" placeholder="jane@example.com" required>
+                    </label>
+                    <div class="input-row">
+                        <label>
+                            Check-in
+                            <input type="date" name="checkin" required>
+                        </label>
+                        <label>
+                            Check-out
+                            <input type="date" name="checkout" required>
+                        </label>
+                    </div>
+                    <label>
+                        Room type
+                        <select name="roomType" required>
+                            <option value="Sky Suite">Sky Suite</option>
+                            <option value="City View Room">City View Room</option>
+                            <option value="Executive Loft">Executive Loft</option>
+                        </select>
+                    </label>
+                    <button class="button button-primary" type="submit">Confirm booking</button>
+                    <p class="booking-feedback" id="bookingFeedback"></p>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2026 LoftStay. Designed for modern travelers seeking calm and effortless booking.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
