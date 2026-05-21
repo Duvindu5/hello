@@ -67,7 +67,7 @@ body {
     transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.button:hover {
+.button:hover:not(:disabled) {
     transform: translateY(-1px);
 }
 
@@ -77,8 +77,13 @@ body {
     box-shadow: 0 18px 40px rgba(17, 24, 39, 0.08);
 }
 
-.button-primary:hover {
+.button-primary:hover:not(:disabled) {
     background: #0f172a;
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 .button-secondary {
@@ -395,6 +400,53 @@ body {
     color: #047857;
     font-weight: 600;
     min-height: 1.6rem;
+}
+
+/* Payment Gateway Styles */
+.price-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    margin: 16px 0;
+    font-weight: 600;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#totalPrice {
+    font-size: 1.25rem;
+    color: #111827;
+}
+
+.payment-section {
+    margin: 24px 0;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.payment-section h3 {
+    margin: 0 0 16px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.card-element {
+    padding: 12px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.card-errors {
+    color: #b91c1c;
+    margin-top: 8px;
+    font-size: 0.875rem;
+    min-height: 20px;
 }
 
 .site-footer {

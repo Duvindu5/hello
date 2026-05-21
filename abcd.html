@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
     <div class="page-shell">
@@ -161,13 +162,22 @@
                     </div>
                     <label>
                         Room type
-                        <select name="roomType" required>
-                            <option value="Sky Suite">Sky Suite</option>
-                            <option value="City View Room">City View Room</option>
-                            <option value="Executive Loft">Executive Loft</option>
+                        <select name="roomType" id="roomType" required>
+                            <option value="99">City View Room - $99/night</option>
+                            <option value="179">Sky Suite - $179/night</option>
+                            <option value="219">Executive Loft - $219/night</option>
                         </select>
                     </label>
-                    <button class="button button-primary" type="submit">Confirm booking</button>
+                    <div class="price-display">
+                        <span>Total price:</span>
+                        <span id="totalPrice">$0</span>
+                    </div>
+                    <div id="payment-section" class="payment-section" style="display: none;">
+                        <h3>Payment Details</h3>
+                        <div id="card-element" class="card-element"></div>
+                        <div id="card-errors" class="card-errors" role="alert"></div>
+                    </div>
+                    <button class="button button-primary" type="submit">Confirm & Pay</button>
                     <p class="booking-feedback" id="bookingFeedback"></p>
                 </form>
             </section>
